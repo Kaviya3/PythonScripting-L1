@@ -1,0 +1,16 @@
+#PRGM1
+
+topDomainList=["edu","com","org","in"]
+urlList = ["www.ndtv.com", "www.website.org", "www.bis.org.in", "www.rbi.org.in", "www.google.com", "www.annauniv.edu"]
+
+def sortDomainNames(domainList,urlList):
+	
+	sortedUrlList = []
+	
+	for i in domainList:
+		for i1 in urlList:
+			if i1.endswith(i):
+				sortedUrlList.append(i1)
+
+	print (sortedUrlList)
+sortDomainNames(topDomainList,urlList)
